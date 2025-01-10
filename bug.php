@@ -1,0 +1,1 @@
+This code suffers from a potential issue related to how PHP handles array keys and type juggling.  If the input `$data` contains a key that evaluates to a value equal to 0 when cast to an integer, it will overwrite the value associated with the 0 index. This is because PHP will treat the key as an integer instead of a string.
